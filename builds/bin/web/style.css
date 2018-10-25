@@ -1,0 +1,324 @@
+﻿body {
+    margin: 0;
+    background-color: #ee6959;
+    background: linear-gradient(45deg, #ff5c73, #ff8247);
+}
+
+::selection {
+    background: #fba680;
+    color: #ffdac3;
+}
+
+img {
+    margin: 1em auto 1em auto;
+    display: block;
+    max-width: 250px;
+    max-height: 350px;
+}
+
+div {
+    font-size: 13pt;
+    font-family: "Segoe UI Emoji", "Segoe UI", "Tahoma", "Arial", sans-serif;
+    color: #222;
+    line-height: 17pt;
+}
+
+    div.error {
+        width: 100%;
+        background-color: #ffcc6f;
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5pt;
+    }
+
+    div.warning {
+        width: 100%;
+        background-color: #ff6f6f;
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5pt;
+    }
+
+    div.inner {
+        width: 90%;
+        min-width: 500px;
+        margin: 0 auto 0 auto;
+    }
+
+    div.main {
+        width: 75%;
+        background: #fff;
+        margin: 0em auto 0em auto;
+        display: block;
+        padding: 2em 5em 8em 5em;
+    }
+
+    div.footer {
+        margin-bottom: 10em;
+        background-color: #333;
+        width: 75%;
+        margin: 0em auto 10em auto;
+        padding: 2.5em 5em 2.5em 5em;
+        color: #fff;
+    }
+
+    div.fit {
+        margin: 2em auto 2em auto;
+        max-width: 1100px;
+    }
+
+.footer p {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 11pt;
+    float: left;
+    margin-top: -4em;
+    color: #ececec;
+}
+
+.footer img {
+    margin: 0 0 0 auto;
+}
+
+p, a, h1, h2, h3, div.container, b, i, button, input, table {
+    /*max-width: 1100px;          */
+    /*margin: 1em auto 0.5em auto;*/
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+}
+
+    a:hover {
+        color: #ee6959;
+        text-decoration: underline;
+    }
+
+h1 {
+    font-family: "Segoe UI Light", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40pt;
+    margin-bottom: 40pt;
+    text-shadow: #d6d6d6 3px 3px 15px;
+    line-height: 90%;
+    margin: 0.7em auto 1.75em auto;
+    max-width: 500px;
+}
+
+img.back {
+    display: inline;
+    margin: auto;
+    width: 12px;
+    margin-right: 4px;
+}
+
+h2 {
+    font-family: "Segoe UI Emoji", "Segoe UI", Tahoma, Arial, Sans-serif;
+    font-weight: lighter;
+    margin-top: 2em;
+    font-size: 22pt;
+    color: #000;
+    margin-bottom: 1em;
+    display: block;
+    border-bottom: #ee6959 1px solid;
+    padding: 0.45em 0;
+    line-height: 90%;
+}
+
+p.code {
+    background: #fbfbfb;
+    padding: 2.5em 3.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-size: 11pt;
+    color: #555;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+p.smallcode {
+    background: #f3f3f3;
+    padding: 5px 10px;
+    font-size: 11pt;
+    color: #8c8c8c;
+    font-family: Consolas, "Courier New", monospace;
+    border: 3px solid #ececec;
+}
+
+comment, .comment {
+    color: #d2b7b0;
+}
+
+.symbol {
+    color: #bfbfbf;
+}
+
+marked, .highlight {
+    color: #ee6959;
+}
+
+.string {
+    color: #ff9c44;
+}
+
+h3 {
+    border-top: solid 1px #efefef;
+    padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom: -0.5em;
+    color: #000;
+    font-weight: normal;
+    font-size: 15pt;
+    font-family: "Segoe UI Semibold", "Segoe UI Emoji", "Segoe UI", Tahoma, sans-serif;
+    line-height: 90%;
+}
+
+table {
+    max-width: 1100px;
+    margin: 1em auto 0.5em auto;
+    min-width: 75%;
+    background-color: #f9f9f9;
+    color: #333;
+    border-collapse: collapse;
+}
+
+td {
+    border-collapse: collapse;
+    border: solid 2px #eaeaea;
+    padding: 1em;
+    vertical-align: top;
+}
+
+    td p, td b, td i {
+        margin: 0;
+    }
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-right: 3%;
+    list-style: url(bullet.png);
+    padding-left: 10%;
+}
+
+p {
+    margin-bottom: 0.3em;
+}
+
+input[type="text"], input[type="password"], textarea {
+    background: #fafafa;
+    border: 1pt #cecece solid;
+    padding: 2pt 5pt;
+    margin: 5pt;
+    color: #737373;
+    font-size: 12pt;
+    width: 100%;
+}
+
+  input[type="text"]:hover, input[type="password"]:hover, textarea:hover {
+    background: #fff;
+  }
+
+  input[type="text"]:active, input[type="text"]:focus, input[type="password"]:active, input[type="password"]:focus, textarea:focus {
+    outline: none;
+    color: #232323;
+  }
+
+button {
+    margin: 3pt 2pt 3pt 2pt;
+    background: linear-gradient(20deg, #ff6e8b, #ffa770);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11.5pt;
+    padding: 0.5em 0.75em;
+}
+
+    button:hover {
+        background: linear-gradient(20deg, #ff8e7d, #ffcc6c);
+    }
+
+    button:active, button:focus {
+        background: linear-gradient(20deg, #ffc16c, #ffe66b);
+        outline: none;
+    }
+
+    .task {
+        border-radius: 0.2em;
+        margin: 1em 0em;
+        padding: 0em 1em;
+        background-color: #f1f1f1;
+        font-size: 11pt;
+        overflow-wrap: break-word;
+    }
+
+    p.file {
+        margin: 0;
+        font-size: 8pt;
+        font-family: "Consolas", monospace;
+        background-color: #eaf0ff;
+        border-radius: 0.4em;
+        border: solid 1px #ccd9e0;
+        color: #1c3a50;
+        padding: 0.1em 0.4em;
+        overflow-wrap: break-word;
+    }
+
+    p.version {
+        margin: 0;
+        font-size: 8pt;
+        text-align: right;
+        color: #bdbdbd;
+        display: inline;
+        margin-right: 2em;
+    }
+
+    button.showcontext {
+        margin: 0;
+        padding: 0.2em 0.4em;
+        font-weight: normal;
+        color: #808080;
+        background: #e2e2e2;
+        font-size: 10pt;
+        display: inline;
+    }
+    
+    button.showcontext:hover {
+        color: #777777;
+        background: #e0e0e0;
+    }
+    
+    button.showcontext:active {
+        color: #101010;
+        background: #0000;
+    }
+
+    p.source {
+        font-family: "Consolas", monospace;
+        background: #f9f9f9;
+        color: #6f6f6f;
+        padding: 1em;
+        overflow-wrap: break-word;
+        font-size: 10pt;
+        line-height: 12pt;
+        display: none;
+    }
+    
+    p.region {
+        margin: 0;
+        font-size: 11pt;
+        font-family: "Consolas", monospace;
+        color: #3787b7;
+        font-weight: bold;
+        padding: 0.1em 0.4em;
+        overflow-wrap: break-word;
+    }
+    
+    p.source b {
+        color: #2d2d2d;
+        background: #d0d0d0;
+    }
